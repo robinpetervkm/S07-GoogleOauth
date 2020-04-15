@@ -8,6 +8,9 @@
 
 </head>
 <body>
+<img alt="User Info" src="<%=request.getAttribute("pic")%>">
+Email : <%=request.getAttribute("email")%>
+
 
 </body>
 </html>

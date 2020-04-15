@@ -41,9 +41,10 @@ public class Success extends HttpServlet {
 				.target("https://www.googleapis.com/oauth2/v2/userinfo?access_token=" + googleToken.getAccess_token());
 		Response userInfo = googleUserInfoAPI.request().get();
 		User user = userInfo.readEntity(User.class);
-		request.setAttribute("User", user);
+		request.setAttribute("pic", user.getPicture());
+		request.setAttribute("email", user.getEmail());
 		request.getRequestDispatcher("displayUserInfo.jsp").forward(request, response);
-		System.out.println(user);
+		
 	}
 
 	/*

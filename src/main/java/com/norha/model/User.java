@@ -1,10 +1,10 @@
 package com.norha.model;
-
 public class User {
 	private String id, email, picture;
 	private boolean verified_email;
 	
 	public User() {
+		System.out.println("Called NO Argument User()");
 	}
 
 	public User(String id, String email, String picture, boolean verified_email) {
