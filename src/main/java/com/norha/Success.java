@@ -21,6 +21,12 @@ public class Success extends HttpServlet {
 		// TODO Auto-generated method stub
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
-
+	
+	/*Got from the google Login
+	 * http://localhost:8080/S07-GoogleOauth/success?code=4%
+	 * 2FygEVDjWG2XJ5oemsKbXSXnkoI79GymVP2aMJLXsqMj6citEzlduuIi40fjfkS5iogBZIWXMRPYSUKkJqht2QRqE
+	 * &scope=email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&
+	 * authuser=2&prompt=consent#
+	 */
 
 }
